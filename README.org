@@ -1,6 +1,11 @@
 * tickmarks TOC                                                    :TOC_5_gh:
  - [[#tickmarks][tickmarks]]
    - [[#introduction][Introduction]]
+   - [[#examples][Examples]]
+   - [[#documentation][Documentation]]
+   - [[#release-notes--changelogs][Release Notes & Changelogs]]
+     - [[#release][Release]]
+     - [[#changes][Changes]]
    - [[#contributing-to-tickmarks][Contributing to tickmarks]]
    - [[#copyright][Copyright]]
 
@@ -12,8 +17,14 @@
    structures. You may use this in ways I cannot not anticipate.
    
    So let your imagination run wild. :)
-
-
+** TODO Examples
+** TODO Documentation
+** Release Notes & Changelogs
+*** Release
+    | Version | Date | Details |
+    |---------+------+---------|
+    |         |      |         |
+*** Changes
 ** Contributing to tickmarks
  
    - Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
