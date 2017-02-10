@@ -1,6 +1,18 @@
-* tickmarks
+* tickmarks TOC                                                    :TOC_5_gh:
+ - [[#tickmarks][tickmarks]]
+   - [[#introduction][Introduction]]
+   - [[#contributing-to-tickmarks][Contributing to tickmarks]]
+   - [[#copyright][Copyright]]
 
-  Description goes here.
+* tickmarks
+** Introduction
+   Tickmarks generates the "mathematical" structures for mediating tick marks,
+   for, say, on a chart. Tickmarks does not generate the actual graphics -- we 
+   leave that up to you. It just handles all the nuances for creating those tick 
+   structures. You may use this in ways I cannot not anticipate.
+   
+   So let your imagination run wild. :)
+
 
 ** Contributing to tickmarks
  
