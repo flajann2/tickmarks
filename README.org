@@ -17,14 +17,21 @@
    structures. You may use this in ways I cannot not anticipate.
    
    So let your imagination run wild. :)
+
 ** TODO Examples
 ** TODO Documentation
 ** Release Notes & Changelogs
 *** Release
-    | Version | Date | Details |
+    | Version |       Date | Details         |
+    |---------+------------+-----------------|
+    |   0.0.0 | 2017-02-10 | Initial release |
+    |         |            |                 |
+
+*** Changes
+    | Version | Date | Changes |
     |---------+------+---------|
     |         |      |         |
-*** Changes
+
 ** Contributing to tickmarks
  
    - Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
@@ -36,6 +43,5 @@
    - Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
 
 ** Copyright
-
    Copyright (c) 2017 Fred Mitchell. See LICENSE.txt for
    further details.
