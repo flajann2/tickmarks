@@ -19,12 +19,15 @@ end
 
 require 'juwelier'
 Juwelier::Tasks.new do |gem|
-  # gem is a Gem::Specification... see http://guides.rubygems.org/specification-reference/ for more options
   gem.name = "tickmarks"
   gem.homepage = "http://github.com/flajann2/tickmarks"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Tickmarks generates the "mathematical" structures for mediating tick marks, for charts or anything else you may need them for.}
+  gem.description = %Q{
+    Tickmarks generates the "mathematical" structures for mediating tick marks,
+    for, say, on a chart. Tickmarks does not generate the actual graphics -- we 
+    leave that up to you. It just handles all the nuances for creating those tick 
+    structures. You may use this in ways I cannot not anticipate.}
   gem.email = "fred.mitchell@gmx.de"
   gem.authors = ["Fred Mitchell"]
   gem.version = s_version

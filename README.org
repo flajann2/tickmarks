@@ -3,11 +3,11 @@
    - [[#introduction][Introduction]]
    - [[#examples][Examples]]
    - [[#documentation][Documentation]]
-   - [[#release-notes--changelogs][Release Notes & Changelogs]]
-     - [[#release][Release]]
-     - [[#changes][Changes]]
-   - [[#contributing-to-tickmarks][Contributing to tickmarks]]
-   - [[#copyright][Copyright]]
+     - [[#release-notes--changelogs][Release Notes & Changelogs]]
+       - [[#release][Release]]
+       - [[#changes][Changes]]
+     - [[#contributing-to-tickmarks][Contributing to tickmarks]]
+     - [[#copyright][Copyright]]
 
 * tickmarks
 ** Introduction
@@ -19,29 +19,52 @@
    So let your imagination run wild. :)
 
 ** TODO Examples
-** TODO Documentation
-** Release Notes & Changelogs
-*** Release
-    | Version |       Date | Details         |
-    |---------+------------+-----------------|
-    |   0.0.0 | 2017-02-10 | Initial release |
-    |         |            |                 |
+** Documentation
+   You will specify the range and two or three lambda functions.
 
-*** Changes
-    | Version | Date | Changes |
-    |---------+------+---------|
-    |         |      |         |
+   The first lambda -- the tick -- will represent the tick mark, and
+   will be given the normalized coordinate for that along
+   with wether it is a minor or major tickmark.
 
-** Contributing to tickmarks
+   The second lambda -- the text --  will be given
+   the normalized coordinate and the text to display there.
+
+   The last lambda is optional, and will allow you to format
+   the text to be given to the text lambda. If one is not given,
+   we'll do something very basic.
+
+   You'll also be allowed to specify an overstepping factor,
+   so that you can generate tick marks slightly out of the
+   normal "display area". If you are displaying something for
+   a chart, this will allow you to clip that area, for instance,
+   to give the impression that you have a "view".
+
+   I am obviously using a chart as a metaphor, mainly because I 
+   am doing this for my own chart generation. But this is an important
+   enough of a fuction to exists as its own gem.
+    
+*** Release Notes & Changelogs
+**** Release
+     | Version |       Date | Details         |
+     |---------+------------+-----------------|
+     |   0.0.0 | 2017-02-10 | Initial release |
+     |         |            |                 |
+
+**** Changes
+     | Version | Date | Changes |
+     |---------+------+---------|
+     |         |      |         |
+
+*** Contributing to tickmarks
  
-   - Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
-   - Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
-   - Fork the project.
-   - Start a feature/bugfix branch.
-   - Commit and push until you are happy with your contribution.
-   - Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
-   - Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
+    - Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
+    - Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
+    - Fork the project.
+    - Start a feature/bugfix branch.
+    - Commit and push until you are happy with your contribution.
+    - Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
+    - Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
 
-** Copyright
-   Copyright (c) 2017 Fred Mitchell. See LICENSE.txt for
-   further details.
+*** Copyright
+    Copyright (c) 2017 Fred Mitchell. See LICENSE.txt for
+    further details.
