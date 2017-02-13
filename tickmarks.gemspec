@@ -30,7 +30,8 @@ Gem::Specification.new do |s|
     "Rakefile",
     "lib/tickmarks.rb",
     "spec/spec_helper.rb",
-    "spec/tickmarks_spec.rb"
+    "spec/tickmarks_spec.rb",
+    "tickmarks.gemspec"
   ]
   s.homepage = "http://github.com/flajann2/tickmarks".freeze
   s.licenses = ["MIT".freeze]
