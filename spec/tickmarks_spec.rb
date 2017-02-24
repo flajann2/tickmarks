@@ -7,7 +7,7 @@ describe Tickmarks do
   end
 
   it "sets up lambda" do
-    @tm = Ticks.new(0, 1000) do |tm|
+    @tm = Ticks.new(0...1000) do |tm|
       tm.tick_lambda = ->() {}
       tm.tick_label_lambda = ->() {}
       tm.label_format_lambda = ->() {}
@@ -15,7 +15,7 @@ describe Tickmarks do
   end
 
   it "runs through 11 ticks" do
-    @tm = Ticks.new(128, 512,
+    @tm = Ticks.new(128...512,
                     max_ticks: 100,
                     majors: 10,
                     overstep: 0.0) do |tm|

@@ -3,12 +3,11 @@
 module Tickmarks
   class Ticks
     attr_accessor :tick_lambda, :tick_label_lambda, :label_format_lambda
-    attr_accessor :a, :b
+    attr_accessor :range
     attr_accessor :config
     
-    def initialize a=nil, b=nil, **km, &block
-      @a = a
-      @b = b
+    def initialize range=0...100, **km, &block
+      @range = range
       @config = km
       block.(self) if block_given?
     end
@@ -20,9 +19,11 @@ module Tickmarks
       majors =   (config[:majors]    ||= 10)
       maxticks = (config[:max_ticks] ||= 10)
       format =   (config[:format]    ||= "%d")
-      digits = Math.log10(b).floor      
-      aa = a.floor(-digits)
-      bb = b.ceil(-digits)
+
+      digits = Math.log10(range.last).floor      
+      aa = range.first.floor(-digits)
+      bb = range.last.ceil(-digits)
+      
       ((0.0 - ostep) .. (1.0 + ostep))
         .step(1.0 / maxticks) { |coord|
         val = aa + (bb - aa) * coord
