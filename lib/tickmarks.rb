@@ -20,7 +20,7 @@ module Tickmarks
       majors =   (config[:majors]    ||= 10)
       maxticks = (config[:max_ticks] ||= 10)
       format =   (config[:format]    ||= "%d")
-      digits = Math.log10(b).floor
+      digits = Math.log10(b).floor      
       aa = a.floor(-digits)
       bb = b.ceil(-digits)
       ((0.0 - ostep) .. (1.0 + ostep))
@@ -34,4 +34,3 @@ module Tickmarks
     end
   end
 end
-
