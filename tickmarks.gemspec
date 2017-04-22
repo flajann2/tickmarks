@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0".freeze) if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib".freeze]
   s.authors = ["Fred Mitchell".freeze]
-  s.date = "2017-03-05"
+  s.date = "2017-04-01"
   s.description = "\n    Tickmarks generates the \"mathematical\" structures for mediating tick marks,\n    for, say, on a chart. Tickmarks does not generate the actual graphics -- we \n    leave that up to you. It just handles all the nuances for creating those tick \n    structures. You may use this in ways I cannot not anticipate.".freeze
   s.email = "fred.mitchell@gmx.de".freeze
   s.extra_rdoc_files = [
@@ -35,7 +35,7 @@ Gem::Specification.new do |s|
   ]
   s.homepage = "http://github.com/flajann2/tickmarks".freeze
   s.licenses = ["MIT".freeze]
-  s.rubygems_version = "2.6.8".freeze
+  s.rubygems_version = "2.6.11".freeze
   s.summary = "Tickmarks generates the \"mathematical\" structures for mediating tick marks, for charts or anything else you may need them for.".freeze
 
   if s.respond_to? :specification_version then
